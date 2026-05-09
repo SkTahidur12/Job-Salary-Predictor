@@ -8,8 +8,7 @@ import pandas as pd
 # =========================
 # LOAD FILES
 # =========================
-with open("knn_model.pkl", "rb") as file:
-    model = pickle.load(file)
+model = pickle.load(open("knn_model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 columns = pickle.load(open("columns.pkl", "rb"))
 
