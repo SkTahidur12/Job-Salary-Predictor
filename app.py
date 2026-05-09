@@ -8,9 +8,9 @@ import pandas as pd
 # =========================
 # LOAD FILES
 # =========================
-model = pickle.load(open("knn_model.pkl", "rb"))
-scaler = pickle.load(open("scaler.pkl", "rb"))
-columns = pickle.load(open("columns.pkl", "rb"))
+model = pickle.load(open("knn_model.pkl", "wb"))
+scaler = pickle.load(open("scaler.pkl", "wb"))
+columns = pickle.load(open("columns.pkl", "wb"))
 
 # =========================
 # HELPER: EXTRACT OPTIONS FROM TRAINED COLUMNS
